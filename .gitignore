@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+
+# Environments
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# Data and outputs
+outputs/
+data/frames/
+data/raw/
+# Keep videos out of git; store paths or use LFS instead
+data/videos/
+
+# Media
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# OS
+.DS_Store
+Thumbs.db

@@ -39,3 +39,4 @@ Notes
 - For GPU acceleration, install the PyTorch version matching your CUDA, then reinstall ultralytics if necessary.
 - The default model yolov8n.pt is downloaded on first run.
 - Adjust --conf and --iou for detection quality.
+# player-heatmap-detection

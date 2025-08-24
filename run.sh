@@ -13,5 +13,16 @@ if [[ -n "${VIDEO_PATH_ARG}" ]]; then
   export VIDEO_PATH="${VIDEO_PATH_ARG}"
 fi
 
-python3 -m pip install -r requirements.txt
-python3 main.py
+# Activate venv, install, and run
+VENV_PATH=".venv"
+
+if [ ! -d "$VENV_PATH" ]; then
+  echo "Virtual environment not found. Creating one..."
+  python3 -m venv "$VENV_PATH"
+fi
+
+# Use python from venv
+PYTHON_EXEC="$VENV_PATH/bin/python3"
+
+"$PYTHON_EXEC" -m pip install -r requirements.txt
+"$PYTHON_EXEC" main.py

@@ -1,0 +1,7 @@
+.venv/
+data/videos/
+*.so
+*.mp4
+*.avi
+*.mkv
+*.mov
